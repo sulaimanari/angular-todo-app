@@ -27,4 +27,14 @@ export class AppComponent {
       this.newTodoContent = ''; 
     }
   }
+
+  deleteItem(itemId: number): void {
+    if (this.itemService.getTodosItems().some(item => item.id === itemId)) {
+      this.itemService.deleteItem(itemId);
+      this.items = this.itemService.getTodosItems();
+    } else {
+      console.error('Todo with ID ' + itemId + ' not found');
+    }
+  }
+
 }

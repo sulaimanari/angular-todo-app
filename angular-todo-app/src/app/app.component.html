@@ -6,7 +6,10 @@
     <button (click)="addItem()">Add Item</button>
   </div>
   <ul class="item-list">
-    <li *ngFor="let item of items">{{ item.content }}</li>
+    <li *ngFor="let item of items">
+      {{ item.content }}
+      <button class="delete" (click)="deleteItem(item.id)">X</button>
+    </li>
   </ul>
 </div>
 

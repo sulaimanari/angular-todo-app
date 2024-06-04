@@ -32,4 +32,8 @@ export class ItemService {
     addItem.id = this.nextId++;
     this.todoItem.push(addItem);
   }
+
+  deleteItem(itemId: number): void {
+    this.todoItem = this.todoItem.filter(item => item.id !== itemId);
+  }
 }

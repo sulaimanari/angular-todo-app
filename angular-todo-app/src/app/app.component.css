@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 .input-container {
@@ -10,6 +11,7 @@
 }
 
   .input-container input {
+    display: inline-block;
     padding: 5px;
     margin-right: 10px;
   }
@@ -25,8 +27,31 @@
 .item-list {
   list-style-type: none;
   padding: 0;
+  display: inline-block;
 }
 
   .item-list li {
+    display: block;
+    width: 275px;
+     justify-content: space-between;
+    word-wrap: break-word;
     margin-bottom: 5px;
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: green;
+    outline-width: thin;
+  }
+
+
+.delete {
+  background-color: lightpink; 
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+  .delete:hover {
+    background-color: orangered; 
   }
