@@ -1,0 +1,12 @@
+<div class="app-container">
+  <h1>{{ title }}</h1>
+  <div class="input-container">
+    <input type="text"  placeholder="Enter a new item"
+           [(ngModel)]="newTodoContent">
+    <button (click)="addItem()">Add Item</button>
+  </div>
+  <ul class="item-list">
+    <li *ngFor="let item of items">{{ item.content }}</li>
+  </ul>
+</div>
+
