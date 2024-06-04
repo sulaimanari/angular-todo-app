@@ -34,6 +34,10 @@ export class ItemService {
   }
 
   deleteItem(itemId: number): void {
-    this.todoItem = this.todoItem.filter(item => item.id !== itemId);
+    if (this.todoItem.some(item => item.id === itemId)) {
+      this.todoItem = this.todoItem.filter(item => item.id !== itemId);
+    } else {
+      console.error("ToDO with ID " + itemId + " not found!");
+    }
   }
 }
