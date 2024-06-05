@@ -33,4 +33,8 @@ export class AppComponent {
       this.items = this.itemService.getTodosItems();
   }
 
+  editItem(itemId: number): void { 
+    this.itemService.editItem(itemId);
+    this.items = this.itemService.getTodosItems();
+  }
 }

@@ -7,9 +7,10 @@
   </div>
   <ul class="item-list">
     <li *ngFor="let item of items">
-      {{ item.content }}
+      <input class="edit" [(ngModel)]="item.content"> 
       <button class="delete" (click)="deleteItem(item.id)">X</button>
-    </li>
-  </ul>
-</div>
+      <button (click)="editItem(item.id)">Edit</button>
+    </li> 
+  </ul> 
+</div> 
 

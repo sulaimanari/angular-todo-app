@@ -55,3 +55,15 @@
   .delete:hover {
     background-color: orangered; 
   }
+
+.edit {
+  background-color: lightskyblue;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit:hover {
+  background-color:dodgerblue;
+}

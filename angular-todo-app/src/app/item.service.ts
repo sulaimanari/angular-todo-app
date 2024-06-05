@@ -40,4 +40,14 @@ export class ItemService {
       console.error("ToDO with ID " + itemId + " not found!");
     }
   }
+
+  editItem(updatedItem: number): void {
+    const update = this.todoItem.findIndex(todoItem => todoItem.id === updatedItem);
+    if (update !== -1) {
+      this.todoItem[update];
+    } else {
+      console.error("ToDO with ID " + updatedItem + " not found!");
+    }
+  }  
+  
 }
