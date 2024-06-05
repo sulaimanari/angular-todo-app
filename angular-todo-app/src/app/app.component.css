@@ -1,69 +1,74 @@
 .app-container {
+  padding: 20px;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
   text-align: center;
+  white-space: pre-line;
 }
 
 .input-container {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-  .input-container input {
-    display: inline-block;
-    padding: 5px;
-    margin-right: 10px;
-  }
+.h1 {
+  font-family: 'Segoe UI Variable Display';
+}
 
-  .input-container button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+.input-container input {
+  margin-right: 10px;
+  background-color: #758c3c59;
+}
 
 .item-list {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
 }
 
   .item-list li {
-    display: block;
-    width: 275px;
-     justify-content: space-between;
-    word-wrap: break-word;
-    margin-bottom: 5px;
-    border: 1px solid black;
-    outline-style: solid;
-    outline-color: green;
-    outline-width: thin;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
   }
 
+    .item-list li input {
+      flex: 1;
+      max-width: 100%;
+      margin-right: 10px;
+      padding: 5px;
+      margin-right: 20px;
+      background-color: #b7a36b69;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      display: inline-block;
+    }
 
 .delete {
-  background-color: lightpink; 
+  background-color: #b0432f;
   color: black;
-  border: none;
   padding: 5px 10px;
-  border-radius: 5px;
+  border: none;
   cursor: pointer;
+  margin-right: 20px;
+  border-radius: 15px;
 }
 
   .delete:hover {
-    background-color: orangered; 
+    background-color: red;
   }
 
-.edit {
-  background-color: lightskyblue;
+.edit-btn {
+  background-color: #8fd05d;
   color: black;
-  border: none;
   padding: 5px 10px;
-  border-radius: 5px;
+  border: none;
   cursor: pointer;
+  margin-right: 20px;
+  border-radius: 15px;
 }
-.edit:hover {
-  background-color:dodgerblue;
-}
+
+  .edit-btn:hover {
+    background-color: green;
+  }

@@ -7,9 +7,9 @@
   </div>
   <ul class="item-list">
     <li *ngFor="let item of items">
-      <input class="edit" [(ngModel)]="item.content"> 
+      <input [(ngModel)]="item.content"> 
       <button class="delete" (click)="deleteItem(item.id)">X</button>
-      <button (click)="editItem(item.id)">Edit</button>
+      <button class="edit-btn"(click)="editItem(item.id)">Edit</button>
     </li> 
   </ul> 
 </div> 
