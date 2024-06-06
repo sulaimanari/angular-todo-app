@@ -29,6 +29,11 @@ export class ItemService {
   }
 
   addTodoItem(addItem: Item): void {
+    const exist = this.todoItem.find(item => item.content === addItem.content);
+    if (exist) {
+      alert('Already exist...')
+      return;
+    }
     addItem.id = this.nextId++;
     this.todoItem.push(addItem);
   }
